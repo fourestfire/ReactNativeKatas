@@ -17,6 +17,7 @@ const settings =  {
   "Email":"chuck@norrisfamily.arpa",
 }
 
+// interesting below that fontWeight has to be a string - i guess because it takes bold and normal as valid inputs. also, cool to set borderBottomWidth as 1 and borderColor to generate a horizontal rule
 
 const ProfileScreen = (props)=>{
   return (
@@ -61,9 +62,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
 });
-
-
-
 
 
 ProfileScreen.displayName = 'ProfileScreen'

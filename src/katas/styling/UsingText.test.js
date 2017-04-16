@@ -25,8 +25,12 @@ import colors from '@/runner/colors'
 const UsingText= (props)=>{
   return (
     <View style={styles.container}>
-      <Text>Using</Text>
-      <Text>Text</Text>
+      <Text style={styles.topFont}>Using</Text>
+      <Text style={styles.bottomFont}>T
+        <Text style={styles.bottomFontExtra}>
+          ext
+        </Text>
+      </Text>
     </View>
   )
 }
@@ -39,6 +43,22 @@ const styles = StyleSheet.create({
     alignItems:'center',
     backgroundColor: colors[1],
   },
+  topFont: {
+    fontFamily:'AmericanTypewriter',
+    fontSize:100
+  },
+  bottomFont: {
+    color:'white',
+    letterSpacing:-20,
+    fontSize:100,
+    fontStyle:'italic',
+    fontFamily:'Baskerville'
+  },
+  bottomFontExtra: {
+    fontSize:60,
+    letterSpacing:0
+  }
+
 });
 
 

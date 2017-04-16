@@ -17,9 +17,7 @@ const chart = [11, 50, 2, 42, 10, 8]
 //TODO: remove the text element and replace it with a real bar
 const Bar = (props)=>{
   return(
-    <View>
-      <Text>Bar!</Text>
-    </View>
+    <View style={[styles.bar, {height: props.val * 2}]} />
   )
 }
 
@@ -51,12 +49,15 @@ const styles = StyleSheet.create({
   },
   chart:{
      height:100,
+     flexDirection:'row',
+     alignItems: 'flex-end'
   },
   bar:{
     backgroundColor:'red',
     marginLeft:2,
     marginRight:2,
     width:15,
+    flex:0
   }
 })
 

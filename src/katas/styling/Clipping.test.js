@@ -24,7 +24,7 @@ import colors from '@/runner/colors'
 const Clipping= (props)=>{
   return (
     <View style={styles.container}>
-      <View style={{height:80, width:80, borderRadius:40}}>
+      <View style={{height:80, width:80, borderRadius:40, overflow:'hidden'}}>
         <View style={{height:80, width:80, backgroundColor:'orange'}}>
         </View>
       </View>

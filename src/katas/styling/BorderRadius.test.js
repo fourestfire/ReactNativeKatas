@@ -17,13 +17,13 @@ import colors from '@/runner/colors'
 // - Use the `borderRadius` property
 //
 
-const Disc = (props)=><View style={[{margin:10, backgroundColor:'white', width:60, height:60}, props.style]}/>
+const Disc = (props)=><View style={[{margin:10, borderRadius:30, backgroundColor:'white', width:60, height:60}, props.style]}/>
 
 const BorderRadius = (props)=>{
   return (
     <View style={styles.container}>
-      <Disc style={{}}/>
-      <Disc style={{}}/>
+      <Disc style={{borderRadius:10}}/>
+      <Disc style={{borderRadius:20}}/>
       <Disc/>
     </View>
   )

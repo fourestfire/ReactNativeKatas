@@ -30,6 +30,9 @@ const FillAll = (props)=>{
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors[0],
+    flex: 1,
+    justifyContent: 'center', // because it's by column, item goes to center
+    alignItems: 'center'
   },
   text:{
     color: 'white',
